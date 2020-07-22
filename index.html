@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Snake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameOver">
+    GAME OVER
+    <p>press space to restart game</p>
+  </div>
+  <div id="titleContainer"><h1>the snake game</h1></div>
+  <div id="menuContainer">
+    <h1>colors : </h1>
+    <ul>
+      <li><button id="btn-1" class="btn chosen" onclick="changeSnakeColor('#7CEA9C', 'btn-1')"></button></li>
+      <li><button id="btn-2" class="btn" onclick="changeSnakeColor('#FFBF00', 'btn-2')"></button></li>
+      <li><button id="btn-3" class="btn" onclick="changeSnakeColor('#730071', 'btn-3')"></button></li>
+      <li><button id="btn-4" class="btn" onclick="changeSnakeColor('#2E5EAA', 'btn-4')"></button></li>
+    </ul>
+  </div>
+  <canvas id="gameCanvas" width="600" height="400"></canvas>
+  <script src="script.js"></script>
+  <h2 id="score">Score : 0</h2>
+</body>
+</html>
